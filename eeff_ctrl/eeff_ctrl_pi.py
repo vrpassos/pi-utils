@@ -39,7 +39,7 @@ BAUD_RATE = 9600
 
 # --- Configurações de Simulação (Constantes) ---
 DEFAULT_SIMULATION_DELAY_SECONDS = 1.0 # Reduzido para 1 segundo
-DEFAULT_UPDATE_INTERVAL_SECONDS = 0.1 # Reduzido para 0.1s para envio mais rápido
+DEFAULT_UPDATE_INTERVAL_SECONDS = 1.0 # Reduzido para 0.1s para envio mais rápido
 SENSOR_RECOVERY_TIME_SECONDS = 1.0 # Tempo de recuperação é 1 segundo
 
 # --- Mapeamento de IDs de sensor para seus respectivos pinos e índices de bit na string de saída ---
@@ -94,7 +94,7 @@ print("DEBUG: Argument parsing complete.")
 
 # --- Debounce Time para Polling Manual EFETIVO (em segundos) ---
 # O sinal deve ser estável por este tempo para ser considerado uma transição válida.
-POLLING_DEBOUNCE_SECONDS = 0.05 # 50ms de estabilidade. Ajuste se o ruído for muito persistente.
+POLLING_DEBOUNCE_SECONDS = 0.2 # 50ms de estabilidade. Ajuste se o ruído for muito persistente.
 
 # --- Estrutura de Estado para Cada Sensor ---
 sensor_states = {}
